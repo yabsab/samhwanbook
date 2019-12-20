@@ -5,7 +5,7 @@
 	
 	<title>삼 환 서 점</title>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-	<link rel="stylesheet" type="text/css" href="/Users/yazz/Documents/samhwan/view/test.css">
+	<link rel="stylesheet" type="text/css" href="/Users/yazz/Documents/samhwanbook/view/test.css">
 
 </head>
 <body>
@@ -27,7 +27,7 @@ NO.&ensp;&ensp;&ensp;1&ensp;&ensp;&ensp;
 
 <div class='date-div'>
 	<br>
-	&ensp;<script type="text/javascript" src="/Users/yazz/Documents/samhwan/view/data.js"></script>
+	&ensp;<script type="text/javascript" src="/Users/yazz/Documents/samhwanbook/view/data.js"></script>
 	<br><br>
 	<div style="float:right;" >
 	<input type="text"  input style= "border:none; text-decoration: underline; font-size:20px; text-align: right;" id="company_name"> 
@@ -42,7 +42,7 @@ NO.&ensp;&ensp;&ensp;1&ensp;&ensp;&ensp;
 
 <div class='blink-div'></div>
 <div class='bookinfor-div'>
-	<img src= "/Users/yazz/Documents/samhwan/view/book_infor.png" style="float:right;"  width="80%" height="100%">
+	<img src= "/Users/yazz/Documents/samhwanbook/view/book_infor.png" style="float:right;"  width="80%" height="100%">
 
 
 </div>
@@ -69,118 +69,355 @@ NO.&ensp;&ensp;&ensp;1&ensp;&ensp;&ensp;
 		<td width = "14%;" style="text-align: center;">공급가액</td>
 		<td width = "14%;" style="text-align: center;">비고</td>
 	</tr><!-- 첫번째 줄 끝 -->
-
 	<tr><!-- 두번째 줄 시작 -->
-		<td width = "40%;" style="text-align: center;">test1</td>
-		<td width = "12%;" style="text-align: center;">test2</td>
-		<td width = "6%;" style="text-align: center;">test3</td>
-		<td id = "value"  width = "14%;" style="text-align: center;">1</td>
-		<td width = "14%;" style="text-align: center;">test5</td>
-		<td width = "14%;" style="text-align: center;">test6</td>
+		<!-- 제목 -->
+		<td width = "40%;" style="text-align: center;">
+			<span type="text"  id = "title_select0" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+	</td>
+	<!-- 출판사 -->
+		<td width = "12%;" style="text-align: center;">
+			<span type="text"  id = "book_publish0" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+	</td>
+		<!-- 수량 -->
+		<td width = "6%;" style="text-align: center;">
+		<span type="text"  id = "book_qty0" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+		</span>
+	</td>
+	<!-- 시중가 -->
+		<td id = "value1"  width = "14%;" style="text-align: center;">
+			<span type="text"  id = "book_price0" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+		</td>
+		<!-- 공급가 -->
+		<td width = "14%;" style="text-align: center;">
+		<span type="text"  id = "sale_book_price0" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+		</td>
+		<!-- 비고 -->
+		<td width = "14%;" style="text-align: center;"></td>
 	</tr><!-- 두번째 줄 끝 -->
 
 	<tr><!-- 세번째 줄 시작 -->
-		<td width = "40%;" style="text-align: center;">test1</td>
-		<td width = "12%;" style="text-align: center;">test2</td>
-		<td width = "6%;" style="text-align: center;">test3</td>
-		<td id = "value" width = "14%;" style="text-align: center;">2</td>
-		<td width = "14%;" style="text-align: center;">test5</td>
-		<td width = "14%;" style="text-align: center;">test6</td>
+		<!-- 제목 -->
+		<td width = "40%;" style="text-align: center;">
+			<span type="text"  id = "title_select1" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+	</td>
+	<!-- 출판사 -->
+		<td width = "12%;" style="text-align: center;">
+			<span type="text"  id = "book_publish1" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+	</td>
+		<!-- 수량 -->
+		<td width = "6%;" style="text-align: center;">
+		<span type="text"  id = "book_qty1" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+		</span>
+	</td>
+	<!-- 시중가 -->
+		<td id = "value1"  width = "14%;" style="text-align: center;">
+			<span type="text"  id = "book_price1" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+		</td>
+		<!-- 공급가 -->
+		<td width = "14%;" style="text-align: center;">
+			<span type="text"  id = "sale_book_price1" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+		</td>
+		<!-- 비고 -->
+		<td width = "14%;" style="text-align: center;"></td>
 	</tr><!-- 세번째 줄 끝 -->
+	<tr><!-- 네번째 줄 시작 -->
+		<!-- 제목 -->
+		<td width = "40%;" style="text-align: center;">
+			<span type="text"  id = "title_select2" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+	</td>
+		<!-- 출판사 -->
+		<td width = "12%;" style="text-align: center;">
+			<span type="text"  id = "book_publish2" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+	</td>
+		<!-- 수량 -->
+		<td width = "6%;" style="text-align: center;">
+		<span type="text"  id = "book_qty2" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+		</span>
+	</td>
+	<!-- 시중가 -->
+		<td id = "value1"  width = "14%;" style="text-align: center;">
+			<span type="text"  id = "book_price2" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+		</td>
+		<!-- 공급가 -->
+		<td width = "14%;" style="text-align: center;">
+		<span type="text"  id = "sale_book_price2" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+		</td>
+		<!-- 비고 -->
+		<td width = "14%;" style="text-align: center;"></td>
+	</tr><!-- 네번째 줄 끝 -->
+	<tr><!-- 다섯째 줄 시작 -->
+		<!-- 제목 -->
+		<td width = "40%;" style="text-align: center;">
+			<span type="text"  id = "title_select3" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+	</td>
+		<!-- 출판사 -->
+		<td width = "12%;" style="text-align: center;">
+			<span type="text"  id = "book_publish3" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+	</td>
+		<!-- 수량 -->
+		<td width = "6%;" style="text-align: center;">
+		<span type="text"  id = "book_qty3" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+		</span>
+	</td>
+	<!-- 시중가 -->
+		<td id = "value1"  width = "14%;" style="text-align: center;">
+			<span type="text"  id = "book_price3" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+		</td>
+		<!-- 공급가 -->
+		<td width = "14%;" style="text-align: center;">
+		<span type="text"  id = "sale_book_price3" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+		</td>
+		<!-- 비고 -->
+		<td width = "14%;" style="text-align: center;"></td>
+	</tr><!-- 다섯째 줄 끝 -->
 
-	<tr><!-- 4번째 줄 시작 -->
-		<td width = "40%;" style="text-align: center;">test1</td>
-		<td width = "12%;" style="text-align: center;">test2</td>
-		<td width = "6%;" style="text-align: center;">test3</td>
-		<td id = "value" width = "14%;" style="text-align: center;">3</td>
-		<td width = "14%;" style="text-align: center;">test5</td>
-		<td width = "14%;" style="text-align: center;">test6</td>
-	</tr><!-- 4번째 줄 끝 -->
-
-	<tr><!-- 5번째 줄 시작 -->
-		<td width = "40%;" style="text-align: center;">test1</td>
-		<td width = "12%;" style="text-align: center;">test2</td>
-		<td width = "6%;" style="text-align: center;">test3</td>
-		<td id = "value" width = "14%;" style="text-align: center;">4</td>
-		<td width = "14%;" style="text-align: center;">test5</td>
-		<td width = "14%;" style="text-align: center;">test6</td>
-	</tr><!-- 5번째 줄 끝 -->
 
 	<tr><!-- 6번째 줄 시작 -->
-		<td width = "40%;" style="text-align: center;">test1</td>
-		<td width = "12%;" style="text-align: center;">test2</td>
-		<td width = "6%;" style="text-align: center;">test3</td>
-		<td id = "value" width = "14%;" style="text-align: center;">5</td>
-		<td width = "14%;" style="text-align: center;">test5</td>
-		<td width = "14%;" style="text-align: center;">test6</td>
+		<!-- 제목 -->
+		<td width = "40%;" style="text-align: center;">
+			<span type="text"  id = "title_select4" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+	</td>
+	<!-- 출판사 -->
+		<td width = "12%;" style="text-align: center;">
+			<span type="text"  id = "book_publish4" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+	</td>
+		<!-- 수량 -->
+		<td width = "6%;" style="text-align: center;">
+		<span type="text"  id = "book_qty4" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+		</span>
+	</td>
+		<!-- 시중가 -->
+		<td id = "value1"  width = "14%;" style="text-align: center;">
+			<span type="text"  id = "book_price4" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+		</td>
+		<!-- 공급가 -->
+		<td width = "14%;" style="text-align: center;">
+			<span type="text"  id = "sale_book_price4" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+		</td>
+		<!-- 비고 -->
+		<td width = "14%;" style="text-align: center;"></td>
+
 	</tr><!-- 6번째 줄 끝 -->
 
 	<tr><!-- 7번째 줄 시작 -->
-		<td width = "40%;" style="text-align: center;">test1</td>
-		<td width = "12%;" style="text-align: center;">test2</td>
-		<td width = "6%;" style="text-align: center;">test3</td>
-		<td id = "value" width = "14%;" style="text-align: center;">6</td>
-		<td width = "14%;" style="text-align: center;">test5</td>
-		<td width = "14%;" style="text-align: center;">test6</td>
-	</tr><!-- 7번째 줄 끝 -->
-
+			<!-- 제목 -->
+			<td width = "40%;" style="text-align: center;">
+				<span type="text"  id = "title_select5" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+				</span>
+		</td>
+		<!-- 출판사 -->
+			<td width = "12%;" style="text-align: center;">
+				<span type="text"  id = "book_publish5" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+				</span>
+		</td>
+		<!-- 수량 -->
+			<td width = "6%;" style="text-align: center;">
+			<span type="text"  id = "book_qty5" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+		</td>
+		<!-- 시중가 -->
+			<td id = "value1"  width = "14%;" style="text-align: center;">
+				<span type="text"  id = "book_price5" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+				</span>
+			</td>
+			<!-- 공급가 -->
+			<td width = "14%;" style="text-align: center;">
+			<span type="text"  id = "sale_book_price5" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+				</span>
+			</td>
+			<!-- 비고 -->
+			<td width = "14%;" style="text-align: center;"></td>
+		</tr><!-- 7번째 줄 끝 -->
 	<tr><!-- 8번째 줄 시작 -->
-		<td width = "40%;" style="text-align: center;">test1</td>
-		<td width = "12%;" style="text-align: center;">test2</td>
-		<td width = "6%;" style="text-align: center;">test3</td>
-		<td id = "value" width = "14%;" style="text-align: center;">7</td>
-		<td width = "14%;" style="text-align: center;">test5</td>
-		<td width = "14%;" style="text-align: center;">test6</td>
+		<!-- 제목 -->
+		<td width = "40%;" style="text-align: center;">
+			<span type="text"  id = "title_select6" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+	</td>
+		<!-- 출판사 -->
+		<td width = "12%;" style="text-align: center;">
+			<span type="text"  id = "book_publish6" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+	</td>
+	<!-- 수량 -->
+		<td width = "6%;" style="text-align: center;">
+		<span type="text"  id = "book_qty6" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+		</span>
+	</td>
+		<!-- 시중가 -->
+		<td id = "value1"  width = "14%;" style="text-align: center;">
+			<span type="text"  id = "book_price6" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+		</td>
+		<!-- 공급가 -->
+		<td width = "14%;" style="text-align: center;">
+			<span type="text"  id = "sale_book_price6" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+		</td>
+		<!-- 비고 -->
+		<td width = "14%;" style="text-align: center;"></td>
 	</tr><!-- 8번째 줄 끝 -->
 
 	<tr><!-- 9번째 줄 시작 -->
-		<td width = "40%;" style="text-align: center;">test1</td>
-		<td width = "12%;" style="text-align: center;">test2</td>
-		<td width = "6%;" style="text-align: center;">test3</td>
-		<td id = "value" width = "14%;" style="text-align: center;">8</td>
-		<td width = "14%;" style="text-align: center;">test5</td>
-		<td width = "14%;" style="text-align: center;">test6</td>
+		<!-- 제목 -->
+		<td width = "40%;" style="text-align: center;">
+			<span type="text"  id = "title_select7" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+	</td>
+		<!-- 출판사 -->
+		<td width = "12%;" style="text-align: center;">
+			<span type="text"  id = "book_publish7" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+	</td>
+		<!-- 수량 -->
+		<td width = "6%;" style="text-align: center;">
+		<span type="text"  id = "book_qty7" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+		</span>
+	</td>
+		<!-- 시중가 -->
+		<td id = "value1"  width = "14%;" style="text-align: center;">
+			<span type="text"  id = "book_price7" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+		</td>
+	<!-- 공급가 -->
+		<td width = "14%;" style="text-align: center;">
+			<span type="text"  id = "sale_book_price7" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+		</td>
+		<!-- 비고 -->
+		<td width = "14%;" style="text-align: center;"></td>
 	</tr><!-- 9번째 줄 끝 -->
-
 	<tr><!-- 10번째 줄 시작 -->
-		<td width = "40%;" style="text-align: center;">test1</td>
-		<td width = "12%;" style="text-align: center;">test2</td>
-		<td width = "6%;" style="text-align: center;">test3</td>
-		<td id = "value" width = "14%;" style="text-align: center;">9</td>
-		<td width = "14%;" style="text-align: center;">test5</td>
-		<td width = "14%;" style="text-align: center;">test6</td>
+	<!-- 제목 -->
+	<td width = "40%;" style="text-align: center;">
+		<span type="text"  id = "title_select8" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+		</span>
+</td>
+	<!-- 출판사 -->
+	<td width = "12%;" style="text-align: center;">
+		<span type="text"  id = "book_publish8" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+		</span>
+</td>
+	<!-- 수량 -->
+	<td width = "6%;" style="text-align: center;">
+	<span type="text"  id = "book_qty8" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+	</span>
+</td>
+	<!-- 시중가 -->
+	<td id = "value1"  width = "14%;" style="text-align: center;">
+		<span type="text"  id = "book_price8" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+		</span>
+	</td>
+	<!-- 공급가 -->
+	<td width = "14%;" style="text-align: center;">
+	
+		<span type="text"  id = "sale_book_price8" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+		</span>
+	</td>
+	<!-- 비고 -->
+	<td width = "14%;" style="text-align: center;"></td>
 	</tr><!-- 10번째 줄 끝 -->
-
-
 	<tr><!-- 11번째 줄 시작 -->
-		<td width = "40%;" style="text-align: center;">test1</td>
-		<td width = "12%;" style="text-align: center;">test2</td>
-		<td width = "6%;" style="text-align: center;">test3</td>
-		<td id = "value" width = "14%;" style="text-align: center;">10</td>
-		<td width = "14%;" style="text-align: center;">test5</td>
-		<td width = "14%;" style="text-align: center;">test6</td>
+	<!-- 제목 -->
+	<td width = "40%;" style="text-align: center;">
+		<span type="text"  id = "title_select9" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+		</span>
+</td>
+	<!-- 출판사 -->
+	<td width = "12%;" style="text-align: center;">
+		<span type="text"  id = "book_publish9" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+		</span>
+</td>
+	<!-- 수량 -->
+	<td width = "6%;" style="text-align: center;">
+	<span type="text"  id = "book_qty9" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+	</span>
+</td>
+	
+	<!-- 시중가 -->
+	<td id = "value1"  width = "14%;" style="text-align: center;">
+		<span type="text"  id = "book_price9" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+		</span>
+	</td>
+	<!-- 공급가 -->
+	<td width = "14%;" style="text-align: center;">
+		<span type="text"  id = "sale_book_price9" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+		</span>
+	
+	</td>
+	<!-- 비고 -->
+	<td width = "14%;" style="text-align: center;"></td>
+
 	</tr><!-- 11번째 줄 끝 -->
 
 	<tr><!-- 12번째 줄 시작 -->
-		<td width = "40%;" style="text-align: center;">test 1</td>
-		<td width = "12%;" style="text-align: center;">test 2</td>
-		<td width = "6%;" style="text-align: center;">test 3</td>
-		<td width = "12%;" style="text-align: center;">test </td>
-		<td width = "12%;" style="text-align: center;">test </td>
-		<td width = "12%;" style="text-align: center;">test </td>
+	<!-- 제목 -->
+	<td width = "40%;" style="text-align: center;">
+		<span type="text"  id = "title_select10" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+		</span>
+</td>
+   <!-- 출판사 -->
+	<td width = "12%;" style="text-align: center;">
+		<span type="text"  id = "book_publish10" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+		</span>
+</td>
+	<!-- 수량 -->
+	<td width = "6%;" style="text-align: center;">
+	<span type="text"  id = "book_qty10" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+	</span>
+</td>
+	
+	<!-- 시중가 -->
+	<td id = "value1"  width = "14%;" style="text-align: center;">
+		<span type="text"  id = "book_price10" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+		</span>
+	</td>
+	<!-- 공급가 -->
+	<td width = "14%;" style="text-align: center;">
+	
+		<span type="text"  id = "sale_book_price10" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+		</span>
+	</td>
+	<!-- 비고 -->
+	<td width = "14%;" style="text-align: center;"></td>
 	</tr><!-- 12번째 줄 끝 -->
 
 
 
 
 
+
 	<tr><!-- 13번째 줄 시작 -->
-		
-		
 		<td width = "40%;" colspan="2" style="text-align: center;" >합계 </td>
 		<td width = "12%;" style="text-align: center;">test 1</td>
-		<td width = "12%;" style="text-align: center;">test 2</td>
-		<td width = "12%;" style="text-align: center;">test 3</td>
+		<td  width = "12%;"  style="text-align: center;">
+			<input type="text"  id = "sum_value" style="text-align: center;font-size:15px; border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;">
+			</span>
+	
+		</td>
+		<td width = "12%;" style="text-align: center;">
+			
+		</td>
 		<td width = "12%;" style="text-align: center;">test 4</td>
 		
 		<script type="text/javascript">
@@ -191,21 +428,26 @@ NO.&ensp;&ensp;&ensp;1&ensp;&ensp;&ensp;
 				console.log(table)
 				var tb_value = table.getElementsByTagName("td");
 				
-				 for(var i=0; i< tb_value.length ; i++)
-				  {
-				    // var value_book = tb_value[i].getElementsByTagName("value")
-					// value_book = tb_value[i]
-					value_book = tb_value[i].getAttribute("id")
-					var num = 0
-					if(value_book == "value")
-					{
-						
-						var inner_Value = 
-						console.log(inner_Value)
-					    
-					}
-				  
-				 }
+					// var book_value0 = document.getElementById("value1").innerHTML
+					// var book_value1 = document.getElementById("value2").innerHTML
+					// var book_value2 = document.getElementById("value3").innerHTML
+					// var book_value3 = document.getElementById("value4").innerHTML
+					// var book_value4 = document.getElementById("value5").innerHTML
+					// var book_value5 = document.getElementById("value6").innerHTML
+					// var book_value6 = document.getElementById("value7").innerHTML
+					// var book_value7 = document.getElementById("value8").innerHTML
+					// var book_value8 = document.getElementById("value9").innerHTML
+					// var book_value9 = document.getElementById("value10").innerHTML
+					
+
+					// var sum = parseInt(book_value0)+parseInt(book_value1)+parseInt(book_value2)+parseInt(book_value4)+parseInt(book_value5)+parseInt(book_value6)+parseInt(book_value7)+parseInt(book_value8)
+					// +parseInt(book_value9)
+					
+					// console.log("sum_"+sum)
+					// var quantity = 1
+					// document.getElementById('sum_value').value = sum 
+					
+					
 				
 			}
 			sum()
@@ -213,22 +455,42 @@ NO.&ensp;&ensp;&ensp;1&ensp;&ensp;&ensp;
 			
 	</tr><!-- 13번째 줄 끝 -->
 
-
-
-
-
-
-
 	<tr><!-- 합계 줄 시작 -->
 		
 	</tr><!-- 합계 줄 끝 -->
 	
 	
-	<tr><!-- blink 줄 시작 -->
-		
-	</tr><!-- blink 줄 끝 -->
+	
 
 </table>
+
+<script src="/Users/yazz/Documents/samhwanbook/js/jquery-2.2.4.js"></script>
+<br>
+<br>
+<br>   
+<select name="title_value" id = "title_value">
+	<option value="num0">차례1</option>
+	<option value="num1">차례2</option>
+	<option value="num2">차례3</option>
+	<option value="num3">차례4</option>
+	<option value="num4">차례5</option>
+	<option value="num5">차례6</option>
+	<option value="num6">차례7</option>
+	<option value="num7">차례8</option>
+	<option value="num8">차례9</option>
+	<option value="num9">차례10</option>
+	<option value="num10">차례11</option>
+  </select>   
+
+
+
+
+<input type="text" style="width:200px;height: 20px;"id="tx_Title" >
+<input type="button" id="bt_Title" style="width:50px;height: 40;" value="data" />
+<script type="text/javascript" 
+	src="/Users/yazz/Documents/samhwanbook/js/test.js">
+
+    </script>
 
 
 </body>
