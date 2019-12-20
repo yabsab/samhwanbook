@@ -10,9 +10,12 @@ send_data.addEventListener('click', function()
      
 
       searchISBN(temp)
+      
      // alert(temp)
 
 })   
+
+
 
  function searchISBN(isbn)
  {
@@ -43,7 +46,7 @@ send_data.addEventListener('click', function()
               var publisher = data.publisher
 
             selet_number(title, price, publisher)
-
+            
 
 
           }
@@ -54,7 +57,7 @@ send_data.addEventListener('click', function()
     {
         var s = document.getElementById('title_value')
         var qty = 1  
-
+        sum_test()
         switch(s.value)
         {
         case "num0" :     
@@ -186,17 +189,106 @@ send_data.addEventListener('click', function()
                         document.getElementById('book_publish10').innerHTML = publisher  
                         document.getElementById('book_qty10').innerHTML = qty
                         document.getElementById('book_price10').innerHTML = price
-                            
                         var price_sales = parseInt(price)           
                         document.getElementById('sale_book_price10').innerHTML = price_sales*0.85
-                    break;
-
-              
-                
+               
+                    break;       
         }
+
 
     }
 
+    function sum_test()
+		
+{
+           
+    var book_value0 = document.getElementById("book_price0").innerHTML
+    var book_value1 = document.getElementById("book_price1").innerHTML
+    var book_value2 = document.getElementById("book_price2").innerHTML
+    var book_value3 = document.getElementById("book_price3").innerHTML
+    var book_value4 = document.getElementById("book_price4").innerHTML
+    var book_value5 = document.getElementById("book_price5").innerHTML
+    var book_value6 = document.getElementById("book_price6").innerHTML
+    var book_value7 = document.getElementById("book_price7").innerHTML
+    var book_value8 = document.getElementById("book_price8").innerHTML
+    var book_value9 = document.getElementById("book_price9").innerHTML
+    var book_value10 = document.getElementById("book_price10").innerHTML
+
+    var sales_book_value0 = document.getElementById("sale_book_price0").innerHTML  
+    var sales_book_value1 = document.getElementById("sale_book_price1").innerHTML    
+    var sales_book_value2 = document.getElementById("sale_book_price2").innerHTML    
+    var sales_book_value3 = document.getElementById("sale_book_price3").innerHTML    
+    var sales_book_value4 = document.getElementById("sale_book_price4").innerHTML    
+    var sales_book_value5 = document.getElementById("sale_book_price5").innerHTML   
+    var sales_book_value6 = document.getElementById("sale_book_price6").innerHTML    
+    var sales_book_value7 = document.getElementById("sale_book_price7").innerHTML   
+    var sales_book_value8 = document.getElementById("sale_book_price8").innerHTML    
+    var sales_book_value9 = document.getElementById("sale_book_price9").innerHTML    
+    var sales_book_value10 = document.getElementById("sale_book_price10").innerHTML
+
+
+    var book_count0 = document.getElementById("book_qty0").innerHTML 
+    var book_count1 = document.getElementById("book_qty1").innerHTML
+    var book_count2 = document.getElementById("book_qty2").innerHTML
+    var book_count3 = document.getElementById("book_qty3").innerHTML
+    var book_count4 = document.getElementById("book_qty4").innerHTML
+    var book_count5 = document.getElementById("book_qty5").innerHTML
+    var book_count6 = document.getElementById("book_qty6").innerHTML
+    var book_count7 = document.getElementById("book_qty7").innerHTML
+    var book_count8 = document.getElementById("book_qty8").innerHTML
+    var book_count9 = document.getElementById("book_qty9").innerHTML
+    var book_count10 = document.getElementById("book_qty10").innerHTML
+
+  
+    
+
+    var count_book = parseInt(book_count0)+ parseInt(book_count1)+ parseInt(book_count2)+ parseInt(book_count3)+ parseInt(book_count4)+ parseInt(book_count5)
+                    +parseInt(book_count6)+ parseInt(book_count7)+ parseInt(book_count8)+ parseInt(book_count9)+ parseInt(book_count10)
+
+    var sum_book_value = parseInt(book_value0)+ parseInt(book_value1)+ parseInt(book_value2)+ parseInt(book_value3)+ parseInt(book_value4)+ parseInt(book_value5)
+    +parseInt(book_value6)+ parseInt(book_value7)+ parseInt(book_value8)+ parseInt(book_value9)+ parseInt(book_value10)
+
+    var sum_discount_value = parseInt(sales_book_value0)+ parseInt(sales_book_value1)+ parseInt(sales_book_value2)+ parseInt(sales_book_value3)+ parseInt(sales_book_value4)+ parseInt(sales_book_value5)
+    +parseInt(sales_book_value6)+ parseInt(sales_book_value7)+ parseInt(sales_book_value8)+ parseInt(sales_book_value9)+ parseInt(sales_book_value10)
+
+
+    document.getElementById("sum_book_count").innerHTML = count_book
+    document.getElementById("sum_book_sales_value").innerHTML = sum_book_value
+    document.getElementById("sum_book_discount_value").innerHTML = sum_discount_value
+    
+    console.log("_합_"+sum_discount_value)
+    console.log("_값_1_"+sales_book_value0)
+    console.log("_값_2_"+sales_book_value1)
+    console.log("_값_3_"+sales_book_value2)
+    console.log("_값_4_"+sales_book_value3)
+    console.log("_값_5_"+sales_book_value4)
+    console.log("_값_6_"+sales_book_value5)
+    console.log("_값_7_"+sales_book_value6)
+    console.log("_값_8_"+sales_book_value7)
+    console.log("_값_9_"+sales_book_value8)
+    console.log("_값_10_"+sales_book_value9)
+    console.log("_값_11_"+sales_book_value10)
+
+
+    // var book_value0 = document.getElementById("book_price0").innerHTML
+    // var sales_book_value0 = document.getElementById("sale_book_price0").innerHTML
+    // var book_value0 = document.getElementById("book_price0").innerHTML
+    // var sales_book_value0 = document.getElementById("sale_book_price0").innerHTML
+
+
+    
+
+        // var sum = parseInt(book_value0)+parseInt(book_value1)+parseInt(book_value2)+parseInt(book_value4)+parseInt(book_value5)+parseInt(book_value6)+parseInt(book_value7)+parseInt(book_value8)
+        // +parseInt(book_value9)
+        
+        // console.log("sum_"+sum)
+        // var quantity = 1
+        // document.getElementById('sum_value').value = sum 
+          
+}
+
+  
+        
     
 
  }
